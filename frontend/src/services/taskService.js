@@ -1,19 +1,19 @@
 import api from "../api/api";
 
 export const getTasks = () =>
- api.get("/tasks");
+ api.get("/");
 
 export const getTask = (id) =>
- api.get(`/tasks/${id}`);
+ api.get(`/${id}`);
 
 export const createTask = (data) =>
- api.post("/tasks", data);
+ api.post("/", data);
 
 export const updateTask = (
  id,
  data
 ) =>
- api.put(`/tasks/${id}`, data);
+ api.put(`/${id}`, data);
 
 export const deleteTask = (id) =>
- api.delete(`/tasks/${id}`);
+ api.delete(`/${id}`);
